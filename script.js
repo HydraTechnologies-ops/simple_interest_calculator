@@ -1,7 +1,7 @@
 function compute() {
   let p = document.getElementById("principal").value;
   let principal = parseInt(p);
-  let rate = parseInt(document.getElementById("rate").value);
+  let rate = document.getElementById("rate").value;
   let years = parseInt(document.getElementById("years").value);
   let interest = parseFloat((principal * years * rate) / 100);
   let amount = principal + interest;
@@ -23,9 +23,9 @@ function compute() {
       "</mark>" +
       "%. <br> You will receive an amount of $" +
       "<mark>" +
-      interest +
+      amount +
       "</mark>" +
-      ", <br> in the year + " +
+      ", <br> in the year " +
       "<mark>" +
       year +
       "</mark>" +
